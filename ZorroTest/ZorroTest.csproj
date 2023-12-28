@@ -26,4 +26,12 @@
     <ProjectReference Include="..\Zorro\Zorro.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <EditorConfigFiles Remove="C:\Users\adria\source\repos\Zorro\ZorroTest\.editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="C:\Users\adria\source\repos\Zorro\ZorroTest\.editorconfig" />
+  </ItemGroup>
+
 </Project>

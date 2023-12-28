@@ -6,4 +6,12 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <EditorConfigFiles Remove="C:\Users\adria\source\repos\Zorro\Zorro\.editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="C:\Users\adria\source\repos\Zorro\Zorro\.editorconfig" />
+  </ItemGroup>
+
 </Project>
