@@ -1,0 +1,38 @@
+name: test and linting
+
+on:
+  push:
+    branches: [ master ]
+  workflow_dispatch:
+
+permissions: read-all
+      
+jobs:
+  build:
+    name: Test Project
+    runs-on: ubuntu-latest
+    permissions: 
+      checks: write
+      
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+        
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: 8.x
+        
+    - name: Add Github as NuGet Source
+      run: dotnet nuget add source --username AK2083 --password ${{ secrets.GITHUB_TOKEN }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/AK2083/index.json"
+
+    - name: Restore Dependencies
+      run: dotnet restore ${{ github.workspace}}/${{ github.event.repository.name }}/${{ github.event.repository.name }}.csproj
+      
+    - name: Build
+      run: dotnet build --no-restore
+      
+    - name: Run tests 
+      run: dotnet test 
