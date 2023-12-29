@@ -1,4 +1,13 @@
-# 0.1.0 (2023-12-29)
+# [0.2.0](https://github.com/AK2083/Zorro/compare/v0.1.0...v0.2.0) (2023-12-29)
+
+
+### Features
+
+* **Zorro:** add workflow validity ([c9f575f](https://github.com/AK2083/Zorro/commit/c9f575f67b05ba373a725971e2ec818a9d72171d))
+
+
+
+# [0.1.0](https://github.com/AK2083/Zorro/compare/c22b7b321a3a3caa3194870b511404db50f7232e...v0.1.0) (2023-12-29)
 
 
 ### Features
