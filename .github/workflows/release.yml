@@ -82,7 +82,7 @@ jobs:
     - run: dotnet build
 
     - name: Pack NuGet Package
-      run: dotnet pack --configuration Release --output ${{ env.NuGetDirectory }} -p:PackageVersion=${{ needs.create_nuget.outputs.newTag }}
+      run: dotnet pack --configuration Release --output ${{ env.NuGetDirectory }} -p:PackageVersion=${{ needs.create_release.outputs.newTag }}
       
     - name: Publish NuGet package
       run: dotnet nuget push "${{ env.NuGetDirectory }}/*.nupkg" --skip-duplicate
