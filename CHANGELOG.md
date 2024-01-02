@@ -1,3 +1,12 @@
+# [0.3.0](https://github.com/AK2083/Zorro/compare/v0.2.0...v0.3.0) (2024-01-02)
+
+
+### Features
+
+* **Zorro:** add project infos ([9430667](https://github.com/AK2083/Zorro/commit/9430667baa6d2c40a978b2bd2286ae326ad8ee4c))
+
+
+
 # [0.2.0](https://github.com/AK2083/Zorro/compare/v0.1.0...v0.2.0) (2023-12-29)
 
 
