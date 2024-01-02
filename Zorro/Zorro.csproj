@@ -4,6 +4,14 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <SignAssembly>False</SignAssembly>
+    <Title>Zorro</Title>
+    <Authors>Adrian Helmchen</Authors>
+    <RepositoryUrl>https://github.com/AK2083/Zorro</RepositoryUrl>
+    <Description>Workflow class library. This contains tax workflows at years from 2011.</Description>
+    <RepositoryType>git</RepositoryType>
+    <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
+    <AnalysisLevel>latest</AnalysisLevel>
   </PropertyGroup>
 
   <ItemGroup>
